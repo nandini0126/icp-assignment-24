@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculatearea(radius){
+            const area=3.14 * (radius*radius);
+            console.log(`Area is: ${area}`);
+            return area;
+        }
+        calculatearea(5);
+
+        function NoArgNoRet(){
+            console.log("Hello");
+        }
+
+        function ArgNoRet(num){
+            const square=num * num;
+            console.log(`Square is: ${square}`);
+        }
+
+        function RetNoArg(){
+            const val=5;
+            console.log("value is 5");
+            return val;
+        }
+        function ArgAndRet(l,b){
+            const rectArea=l*b;
+            console.log(`Area of rectangle is:${rectArea}`);
+            return rectArea;
+        }
+        NoArgNoRet();
+        ArgNoRet(6);
+        RetNoArg();
+        ArgAndRet(10,20);
+    </script>
+</body>
+</html>
